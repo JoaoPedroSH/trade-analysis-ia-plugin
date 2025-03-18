@@ -4,7 +4,7 @@
 ```
   trade-analysis-ia-plugin/
   ├── main.py
-  ├── window.py
+  ├── setup.py
   ├── icon.ico
   └── requirements.txt
 ```
