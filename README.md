@@ -8,4 +8,5 @@
   ├── icon.ico
   └── requirements.txt
 ```
-Criar executável - ```pyinstaller --onefile --windowed main.py```
+
+Criar executável - ```pyinstaller --onefile --windowed --hidden-import=numpy._core.multiarray main.py```

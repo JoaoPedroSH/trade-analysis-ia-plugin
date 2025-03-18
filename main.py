@@ -33,17 +33,17 @@ async def connect_to_api():
     user_id = config["user_id"]
     token = config["token"]
 
-    while True:
-        try:
-            async with websockets.connect(
-                f"ws://localhost:8000/ws/{user_id}",
-                extra_headers={"Authorization": f"Bearer {token}"}
-            ) as websocket:
-                print("Conectado à API!")
-                await listen_for_orders(websocket)
-        except Exception as e:
-            print(f"Erro: {e}. Reconectando em 5s...")
-            await asyncio.sleep(5)
+    # while True:
+    #     try:
+    #         async with websockets.connect(
+    #             f"ws://localhost:8000/ws/{user_id}",
+    #             extra_headers={"Authorization": f"Bearer {token}"}
+    #         ) as websocket:
+    #             print("Conectado à API!")
+    #             await listen_for_orders(websocket)
+    #     except Exception as e:
+    #         print(f"Erro: {e}. Reconectando em 5s...")
+    #         await asyncio.sleep(5)
 
 async def listen_for_orders(websocket):
     try:
