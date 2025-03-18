@@ -8,4 +8,4 @@
   ├── icon.ico
   └── requirements.txt
 ```
-Criar executável - ```pyinstaller --onefile --windowed client.py```
+Criar executável - ```pyinstaller --onefile --windowed main.py```
